@@ -1,0 +1,261 @@
+body {
+    background-color: #121212; /* Dark background */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; /* Light text color */
+}
+
+nav {
+    background-color: #1a1a1a; /* Darker nav background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #444; /* Light border */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; /* White text */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+}
+
+.navbar-nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff; /* Light line color for hover effect */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.custom-divider {
+    border-color: #444; 
+    border-width: 2px;
+    margin: 0.5rem 0;
+}
+
+.home, .aboutme, .skills{
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    background-color: #1e1e1e; 
+    color: #fff; 
+    margin-top: 100px;
+    border-top: 2px solid #444; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+h2 {
+    color: #fff; /* White text */
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    border-bottom: 2px solid #444; /* Light border */
+    padding-bottom: 10px;
+}
+
+.about-image img:hover {
+    filter: grayscale(100%);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Lighter shadow on hover */
+    transform: scale(1.05);
+}
+
+.btn-black-primary {
+    border: 2px solid white; /* White border */
+    color: white; /* White text */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-black-primary:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.container {
+    color: #fff; /* Light text */
+}
+
+.nav-link {
+    color: #fff; /* White text for nav links */
+}
+
+nav .material-symbols-outlined {
+    margin-left: 8px;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.nav-item.dropdown > a {
+    display: flex;
+    align-items: center;
+}
+.skill-card {
+    border: 1px solid #000;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.skill-image:hover {
+    transform: translateY(-10px);
+    background-color: #f0f0f0;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.delete-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.0rem;
+    margin-bottom: 8px;
+}
+
+.delete-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.skill-card {
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background-color: #f5f5f5;
+    color: white;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    background-color: #f8f9fa;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+.image-entry {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-close {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+.social {
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.social:hover {
+    color: black;
+    
+}
